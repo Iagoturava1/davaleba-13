@@ -1,0 +1,58 @@
+.s-1{
+    padding: 50px 50px;
+
+    .container{
+        @extend %Conteiner;
+
+    
+        & > .wrapper{
+            @include flex-props(space-between,flex-start);
+            & > img{
+                width: 30%;
+
+            }
+
+            & > p{
+                size: $paragrap-size-01;
+                width: 65%;
+                font-size: 20px;
+                line-height: 24px;
+                color:$paragrap-color-01;
+            }   
+            
+        }
+    }
+}
+.s-2{
+    padding: 50px 50px;
+    background-color:rgb(183, 216, 210); 
+    .container{
+        flex-wrap: wrap;
+        
+        @include flex-props();
+
+        & > .box{
+            width: 300px;
+            height:300px;
+            
+        }
+
+        & > .one {
+            background-color: blue;
+
+        }
+
+        & > .two{
+            background-color: green;
+        }
+        & > .three{
+            background-color:  red;
+        }
+        
+       
+
+        
+            
+        
+    }
+}
